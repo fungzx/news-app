@@ -1,5 +1,3 @@
-const API_KEY = "cd514f9a4756da3bb0e303da3c2a567b";
-
 const searchForm = document.getElementById("search-form");
 const searchInput = document.getElementById("search-input");
 const categoryFilters = document.getElementById("category-filters");
