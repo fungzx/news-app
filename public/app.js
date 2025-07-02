@@ -20,8 +20,8 @@ async function fetchNews(query = "", category = "") {
 
     const keyword = query || category;
     const url = keyword
-      ? `https://gnews.io/api/v4/search?q=${encodeURIComponent(keyword)}&lang=en&sortby=publishedAt&max=10&token=${API_KEY}`
-      : `https://gnews.io/api/v4/top-headlines?lang=en&sortby=publishedAt&max=10&token=${API_KEY}`;
+      ? `/api/news?query=${encodeURIComponent(keyword)}`
+      : `/api/news`;
 
     const res = await fetch(url);
     const data = await res.json();
