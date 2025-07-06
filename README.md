@@ -21,20 +21,27 @@ A lightweight, responsive news dashboard built with HTML, CSS, and JavaScript, a
 
 1. Clone this repo:
 
+```bash
 git clone https://github.com/fungzx/news-app.git
 cd news-app
-
+```
 2. Run locally:
 
 Install backend dependencies:
+```bash
 npm install
+```
 
 Create a .env file:
+```env
 GNEWS_API_KEY=your_gnews_api_key_here
 PORT=3000
+```
 
 Start the server:
+```bash
 node server.js
+```
 
 Then visit http://localhost:3000
 
@@ -58,7 +65,7 @@ Interactivity:
 - Category Filters: Clicking a category button fetches articles for that category and updates the UI to reflect the active filter.
 - Article Details: Clicking an article card opens a Bootstrap modal displaying the article's title, image, content (or description if content is unavailable), and a link to the full article.
 - Reset: Clicking the header resets the search input and category filters, fetching the default top headlines.
-- Load More: Alerts user (API limited to 10 articles on free tier).
+- Load More: Clicking the "Load More" button alerts user (API limited to 10 articles on free tier).
 
 ## Notes
 
